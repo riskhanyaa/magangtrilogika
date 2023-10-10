@@ -1,1 +1,2 @@
 # magangtrilogika
+# magangtrilogika
