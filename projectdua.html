@@ -9,7 +9,6 @@
 
         <!-- Bootstrap JS (Popper.js dan jQuery sudah termasuk di dalamnya) -->
         <script src="ttps://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-       
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
@@ -54,8 +53,8 @@
             /* Create three equal columns that floats next to each other */
             .column {
                 float: left;
-                width: 33.33%;
-                padding: 15px;
+                width: 33%;
+                padding: 5;
             }
             
             /* Clear floats after the columns */
@@ -108,7 +107,7 @@
     </head>
     <body>  
         <header>
-            <h1>Header Website</h1>
+
         </header>
     
         <nav>
@@ -121,32 +120,66 @@
     <div class="row">
         <div class="column">
             <section>
-                <div class="card" style="width: 18rem;">
-                    <img src="data:image/jpeg;base64,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" 
-                    class="card-img-top" alt="bunny">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
+                <h2>P</h2>
+                <p>HAI</p>
             </section>
         </div>
         
         <div class="column">
             <article>
-                <h2>Artikel</h2>
-                <p>Ini adalah artikel yang berisi konten utama dari website ini.</p>
+                <h2>P</h2>
+                <p>HAI</p>
             </article>
         </div>
         
         <div class="column">   
             <aside>
-                <h2>Aside</h2>
-                <p>Ini adalah aside yang berisi informasi tambahan.</p>
+                <h2>P</h2>
+                <p>HAI</p>
             </aside>
         </div>
     </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto p-3">
+        <div class="col">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/enwTijj6tF3MOczsa3tlaqD8TYC-iYe5gcn2A0zrwlg35F8ki6HJ2oaVmf3ZrbrGTG8twNO-deqgxyWufogjR3u2Fmmk1EcUbcnS1_J91HCFMQk=w960-rj-nu-e365" 
+              class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">KWANGYA</h5>
+                <p class="card-text">KWANGYA adalah sebuah kata dalam bahasa Korea yang berarti "padang gurun". 
+                    Wilderness berarti alam liar, limbah, hutan atau gurun. KWANGYA adalah dunia tempat para avatar tinggal. 
+                    Dalam Black Mamba, "넌 광야를 " diterjemahkan sebagai "Kamu mengembara KWANGYA ini</p>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+            <div class="card">
+              <img src="https://pbs.twimg.com/media/E1USOAPXIAI5UP5.jpg:large" 
+              class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">KOSMOS</h5>
+                <p class="card-text">Kosmos (bahasa Yunani: κόσμος yang berarti keteraturan, susunan yang teratur, hiasan) 
+                    dalam pengertian yang paling umum adalah suatu sistem dalam alam semesta yang teratur atau harmonis. 
+                    Ilmu yang mempelajari kosmos disebut dengan kosmologi.</p>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ZX9fmPmSDXGX1MQL_e3QzEKTIYC37UwjMeSYLl3C2KYRihjeW6Vb_hj8FQmO07d2mlU&usqp=CAU" 
+            class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NAEVIS</h5>
+              <p class="card-text">Naevis (Hangul: 나이비스, naibiseu), juga bergaya sebagai nævis atau NAEVIS
+                adalah sistem AI yang membantu aes dari aespa muncul di dunia nyata, 
+                memungkinkan mereka untuk dilihat oleh anggota aespa yang sebenarnya. 
+                Dia pertama kali terungkap dalam video teaser MY, KARINA. 
+                Dia juga ditampilkan dalam gambar promosi grup Black Mamba.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     
         <footer>
             <p>&copy; 2023 Contoh Website Sederhana</p>
