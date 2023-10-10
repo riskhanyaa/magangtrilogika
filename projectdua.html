@@ -4,31 +4,115 @@
         <title>magang trilogika unu</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            /* Styling Header */
+            header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+            
+            /* Styling Navigation */
+            nav {
+                background-color: #555;
+                color: #fff;
+                text-align: center;
+            }
+            
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+            
+            nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+            
+            /* Styling Section, Article, dan Aside */
+            
+            section
+            {
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                background: #ccc;
+                margin: 20px;
+                padding: 20px;
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+            }
+            
+            article {
+                -webkit-flex: 3;
+                -ms-flex: 3;
+                flex: 3;
+                background-color: #f1f1f1;
+                margin: 20px;
+                padding: 20px;
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+            } 
+            
+            aside {
+                margin: 20px;
+                padding: 20px;
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+            }
+            
+            /* Styling Footer */
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+            }
+            </style>
     </head>
     <body>  
         <header>
-            <h1 class="display-1">Display 1</h1>
+            <h1>Header Website</h1>
         </header>
-
+    
         <nav>
-
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
         </nav>
-
         <section>
-
+            <h2>Section Utama</h2>
+            <p>Selamat datang di website kami. Ini adalah contoh website sederhana.</p>
         </section>
-
+    
         <article>
-
+            <h2>Artikel</h2>
+            <p>Ini adalah artikel yang berisi konten utama dari website ini.</p>
         </article>
-
+    
         <aside>
-
+            <h2>Aside</h2>
+            <p>Ini adalah aside yang berisi informasi tambahan.</p>
         </aside>
-
+   
+    
         <footer>
-
+            <p>&copy; 2023 Contoh Website Sederhana</p>
         </footer>
     </body>
 </html>
