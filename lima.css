@@ -1,0 +1,7 @@
+.card {
+    border: none;
+  }
+
+body, .card {
+  background-color: #c4ddde;
+}
