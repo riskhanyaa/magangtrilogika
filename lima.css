@@ -1,3 +1,7 @@
+.navbar, .header {
+  background-color: transparent; /* Atur latar belakang menjadi transparan */
+}
+
 .card {
     border: none;
   }
