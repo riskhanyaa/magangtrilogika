@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Contact Us Form | CodingLab</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+
+  <!-- contactus -->
+    <div class="container align-items-center justify-content-cneter">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Alamat</div>
+            <div class="text-one">Jl. Lingkar Barat Siliwangi, Nogosaren, RT.05/RW.22</div>
+            <div class="text-two">Nogotirto, Gamping, Sleman, D.I. Yogyakarta</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Telp.</div>
+            <div class="text-one"><a href="tel://+6285701246319">0857-0124-6319</a></div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one"><a href="trilogikaedutamayk@gmail.com">trilogikaedutamayk@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your message"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now" />
+            </div>
+          </form>
+        </div>
+      </div>
+
+    <!-- maps -->
+
+    <div class="content" style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+      <div class="container" style="text-align: center;">
+          <div id="map" style="width: 100%; height: 500px;"></div>
+          <script>
+              // Panggil fungsi initMap saat halaman dimuat
+              google.maps.event.addDomListener(window, 'load', initMap);
+          </script>
+      </div>
+  </div>
+    </div>
+
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: { lat: -7.774349, lng: 110.331117 }, // Koordinat tengah peta
+          zoom: 14 // Perbesar level peta (semakin tinggi, semakin dekat)
+        });
+      }
+    </script>
+
+    <script>
+      // Panggil fungsi initMap saat halaman dimuat
+      google.maps.event.addDomListener(window, 'load', initMap);
+    </script>    
+
+  </body>
+</html>
